@@ -1,17 +1,10 @@
 {
     "name": "devxive/xgrav",
     "type": "library",
-    "description": "Corporate cross scripted office which integrates into many CMS, CRM and ERP systems",
-    "keywords": ["cms","crm","dms","erp","php"],
-    "homepage": "http://devxive.com",
+    "description": "Desc goes here",
+    "keywords": ["cms","flat-file cms","flat cms","flatfile cms","php"],
+    "homepage": "http://xgrav.org",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Lahmizzar Valeryon",
-            "email": "lahmizzar@devxive.com",
-            "homepage": "http://lahmizzar.com"
-        }
-    ],
     "require": {
         "php": ">=5.4.0",
         "twig/twig": "~1.16",
@@ -41,6 +34,9 @@
     "autoload": {
         "psr-4": {
             "Xoffice\\": "system/src/Xoffice"
+    "autoload": {
+        "psr-4": {
+            "Grav\\": "system/src/Grav"
         },
         "files": ["system/defines.php"]
     },
