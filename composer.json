@@ -1,0 +1,50 @@
+{
+    "name": "devxive/xgrav",
+    "type": "library",
+    "description": "Corporate cross scripted office which integrates into many CMS, CRM and ERP systems",
+    "keywords": ["cms","crm","dms","erp","php"],
+    "homepage": "http://devxive.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lahmizzar Valeryon",
+            "email": "lahmizzar@devxive.com",
+            "homepage": "http://lahmizzar.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "twig/twig": "~1.16",
+        "erusev/parsedown-extra": "~0.7",
+        "symfony/yaml": "~2.7",
+        "symfony/console": "~2.7",
+        "symfony/event-dispatcher": "~2.7",
+        "symfony/var-dumper": "~2.7",
+        "doctrine/cache": "~1.4",
+        "filp/whoops": "1.2.*@dev",
+        "monolog/monolog": "~1.0",
+        "gregwar/image": "~2.0",
+        "ircmaxell/password-compat": "1.0.*",
+        "mrclay/minify": "~2.2",
+        "donatj/phpuseragentparser": "~0.3",
+        "pimple/pimple": "~3.0",
+        "rockettheme/toolbox": "1.1.*",
+        "maximebf/debugbar": "~1.10"
+    },
+    "dependencies": {
+        "twbs/bootstrap":">=2",
+        "primer-css": ">1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xoffice\\": "system/src/Xoffice"
+        },
+        "files": ["system/defines.php"]
+    },
+    "archive": {
+        "exclude": ["VERSION"]
+    }
+}
